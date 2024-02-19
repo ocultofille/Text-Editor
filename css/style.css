@@ -1,0 +1,20 @@
+.bold{
+    font-weight: bolder;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.underline{
+    text-decoration: underline;
+}
+/* .btn.active:focus,.btn:focus{
+    outline: none;
+    border: none;
+} */
+
+#text-output{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <script src="https://kit.fontawesome.com/f35d130e26.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #text-output {
+            height: 110px;
+            /* background-color: antiquewhite; */
+        }
+    </style>
+</head>
+
+<body class=" text-center container">
+    <main>
+        <h1 class="banner p-3 text-primary "> TextEditor</h1>
+
+        <div class="d-flex">
+            <button type="button" class="btn btn-secondary btn-sm " onclick="makeBold(this)"> Bold</button>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="makeItalic(this)"> Italic</button>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="makeUnderline(this)"> Underline</button>
+            <button type="button" class="align btn btn-secondary btn-sm" onclick="alignText(this,'left')"><i
+                    class="fa-solid fa-align-left"></i></button>
+            <button type="button" class=" align btn btn-secondary btn-sm" onclick="alignText(this,'center')"><i
+                    class="fa-solid fa-align-center"></i></button>
+            <button type="button" class="align btn btn-secondary btn-sm" onclick="alignText(this,'right')"><i
+                    class="fa-solid fa-align-right"></i></button>
+        </div>
+        <hr>
+        
+        <div class="row  editor">
+            <div class="col-sm-5">
+                <div class="form-group">
+                    <label for="text-input">Your Document Text</label>
+                    <textarea class="form-control rounded-5" id="text-input" rows="5" oninput="updateText()"></textarea>
+                </div>
+
+            </div>
+            <div class="col-sm-5  border border-secondary">
+                <label for="text-input">Formatted Text</label>
+                <div id="text-output" class="" height="200px"></div>
+            </div>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
